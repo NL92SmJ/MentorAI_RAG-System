@@ -39,9 +39,9 @@ Optimized for entry-level GPU hardware, MentorAI achieves stable concurrent oper
 
 | Version | Focus / Core Features | Evaluation & Quality Assurance | Status |
 | :--- | :--- | :--- | :--- |
-| **v1** | Local text RAG, metadata filters, live metrics (VRAM/tokens), & PDF security. | Validation of answer accuracy & retriever hit-rate via a golden test set. | ✅ **Completed** |
-| **v2** | Multimodal image processing (diagrams/charts) & cross-encoder re-ranking. | Measurement of precision gains (Precision@K) & image caption verification. | 🚀 **In Progress** |
-| **v3** | Handwriting OCR for handwritten lecture notes and sketches. | Benchmarking text recognition accuracy using Word Error Rate (WER). | 🔮 **Planned** |
+| **v1** | Local text RAG, metadata filters, live metrics (VRAM/tokens), & PDF security. | Validation of answer accuracy & retriever hit-rate via a golden test set. | **Completed** |
+| **v2** | Multimodal image processing (diagrams/charts) & cross-encoder re-ranking. | Measurement of precision gains (Precision@K) & image caption verification. | **In Progress** |
+| **v3** | Handwriting OCR for handwritten lecture notes and sketches. | Benchmarking text recognition accuracy using Word Error Rate (WER). | **Planned** |
 
 ---
 
