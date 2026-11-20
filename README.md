@@ -69,6 +69,10 @@ streamlit run app.py
 
 ### **5. LLM Setting & Testing**
 
+Both examples has been tested with llama3.
+Technically every model could be used. My GPU ist limited to 6GB VRAM, so I started with llama3.[also is already had this modell on my SSD]
+Further tests and experiments with other modells are planned.
+
 Good example:
 <img width="1854" height="810" alt="V1_Testlauf" src="https://github.com/user-attachments/assets/5fa3dfaf-192a-4b23-9d6a-52c536a86ca2" />
 Why: correct background and content
