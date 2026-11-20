@@ -79,7 +79,7 @@ Why: correct background and content
 
 Bad example:
 <img width="1865" height="789" alt="V1_Testlauf2" src="https://github.com/user-attachments/assets/301fc809-8c19-48bc-bdfc-a201a4d0a977" />
-Why: wrong background and correct content
+Why: wrong background (Nicolaus August Otto is the correct inventor -  "Hartmann was an auditor of the one pdf-file of the knowledge database.) Furthermore the content is a bit clumsy. - The answer does not sounds satisfying to me.
 
 Next steps: preparation of a dedicated test-set to evaluate the quality, performance and so on.
 Hypothesis: Retriever is falling, despite using vector/chromaDB?
