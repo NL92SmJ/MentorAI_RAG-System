@@ -112,3 +112,6 @@ The Python Safety Net:
 
 Observability:
 >Added an interactive UI expander in the chat to transparently display the exact chunks consulted, file paths, page numbers, and distance scores for every response.
+
+Result:
+<img width="1820" height="701" alt="V5_Testlauf" src="https://github.com/user-attachments/assets/93fb4094-d1f9-404e-8359-c7a943b57a58" />
