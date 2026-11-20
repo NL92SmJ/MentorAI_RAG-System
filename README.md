@@ -16,7 +16,7 @@ MentorAI relies on a modular, containerized microservice architecture:
 
 ---
 
-## ⚡ Core Features (v1)
+## Core Features (v1)
 
 - **100% Local & Private:** Your study notes and personal documents never leave your local machine.
 - **Dynamic Document Management:** Direct PDF uploads via the sidebar with automatic semantic splitting (`RecursiveCharacterTextSplitter`).
