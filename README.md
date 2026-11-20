@@ -83,3 +83,32 @@ Why: wrong background (Nicolaus August Otto is the correct inventor -  "Hartmann
 
 Next steps: preparation of a dedicated test-set to evaluate the quality, performance and so on.
 Hypothesis: Retriever is falling, despite using vector/chromaDB?
+
+
+### **6. Otto is the inventor again**
+
+
+<img width="1463" height="698" alt="V4_Testlauf" src="https://github.com/user-attachments/assets/8d1ce05f-8000-4322-b262-41c231c0d1c0" />
+
+
+1. The Initial Challenge & Goal
+Starting Point: You developed a local RAG study assistant using Streamlit, ChromaDB via Docker, Ollama (Llama 3/Qwen), and HuggingFace embeddings on an RTX 3050, organizing academic scripts hierarchically (category/semester/subject/).
+
+The Core Problem: Early hallucinations (such as the "Hartmann bug," where the LLM generated incorrect inventors like Hartmann or Daimler) highlighted that the system tended to guess from its internal training data rather than strictly sticking to the provided documents.
+
+2. Implemented Milestones & Solutions
+Determinism & System Prompt:
+>Switched to temperature=0.0 and enforced a strict system prompt forbidding the LLM from inventing outside facts.
+
+Metadata & Ingestion (ingest.py):
+>Automated extraction of semesters, subjects, and page numbers from folder structures.
+>Replaced .add() with .upsert() to ensure clean, idempotent updates when reloading PDFs.
+
+Retrieval Control & Distance Threshold:
+>Added a dynamic Distance Threshold slider in the Streamlit sidebar (defaulting to 0.65) to rigorously filter out noisy or irrelevant chunks (e.g., diesel engine scripts when asking about Otto engines).
+
+The Python Safety Net:
+>Implemented a programmatic check before calling the LLM: if filtering leaves zero relevant chunks, the script aborts immediately and outputs a reliable fallback message ("Dazu habe ich in den aktuellen Lernmaterialien keine Informationen gefunden"). This prevents the LLM from falling back on internal knowledge when context is empty.
+
+Observability:
+>Added an interactive UI expander in the chat to transparently display the exact chunks consulted, file paths, page numbers, and distance scores for every response.
